@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Game2048"
+                    android:textSize="50sp"
+                    android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/currentScore"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/BestScore"
+                android:background="@drawable/radius_score"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+            <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/white"
+                    android:text="@string/CurrentScore"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/score"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/BestScore"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/radius_score"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+            <TextView
+                    android:id="@+id/bestScore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/lemonchiffon"
+                    android:text="@string/BestScore"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:id="@+id/tvBestScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/bestScore1"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/lemonchiffon"
+                    android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <Button
+                android:id="@+id/NewGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:text="@string/newGame"
+                android:textSize="23sp"
+                android:textColor="@color/white"
+                android:background="@drawable/replay_radius"/>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+            android:id="@+id/gameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+        <com.dxw.game2048.widget.GameView
+                android:id="@+id/gameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+        </com.dxw.game2048.widget.GameView>
+
+        <com.dxw.game2048.widget.animation.CardAnimation
+                android:id="@+id/cardAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </com.dxw.game2048.widget.animation.CardAnimation>
+
+    </FrameLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="@string/tip"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+    <Button
+            android:id="@+id/resetGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/reset"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/replay_radius"/>
+
+</LinearLayout>

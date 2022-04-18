@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">2048小游戏</string>
+    <string name="CurrentScore">当前得分</string>
+    <string name="BestScore">最高分</string>
+    <string name="Game2048">2048</string>
+
+    <string name="tip">玩法：上下左右滑动屏幕移动卡片即可</string>
+    <string name="reset">重置</string>
+    <string name="newGame">新游戏</string>
+    <string name="startGame">开始游戏</string>
+    <string name="startCharts">排行榜</string>
+
+    <!--排行榜-->
+    <string name="charts">排名</string>
+    <string name="gameName">玩家</string>
+    <string name="gameScore">分数</string>
+    <string name="continueGame">继续游戏</string>
+
+</resources>

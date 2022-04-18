@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+    <stroke android:width="3dp" android:color="@color/mediumspringgreen" />
+    <corners android:radius="12dp" />
+</shape>
+
+<!--android:shape="rectangle"  输入框为矩形
+stroke : 描边属性，可以定义描边的宽度，颜色，虚实线等
+corners：定义圆角
+
+-->

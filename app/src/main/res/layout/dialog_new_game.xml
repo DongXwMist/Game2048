@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#11ffffff">
+
+    <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="center"
+                android:text="成绩保存"
+                android:textColor="#38ADFF"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:id="@+id/dialog_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:text="您的手机马上自爆"
+                android:textSize="18sp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="#E4E4E4"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/dialog_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_selector_left"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="取消"
+                    android:textColor="#7D7D7D"
+                    android:textSize="20sp"/>
+
+            <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="#E4E4E4"/>
+
+            <Button
+                    android:id="@+id/dialog_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_selector_right"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="确定"
+                    android:textColor="#38ADFF"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

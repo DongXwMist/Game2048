@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:contentPadding="5dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="@color/greenyellow">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+        <TextView
+                android:id="@+id/chartNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="1"
+                android:textSize="18sp"
+                android:layout_marginLeft="22dp"/>
+
+        <TextView
+                android:id="@+id/chartName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/chartNum"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="55dp"
+                android:textSize="20sp"
+                android:text="游戏名"/>
+
+        <TextView
+                android:id="@+id/chartNameScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_toRightOf="@+id/chartName"
+                android:text="成绩"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:gravity="right"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
